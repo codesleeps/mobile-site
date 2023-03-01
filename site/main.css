@@ -1,17 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: rgb(104, 103, 101);
 
-}
 
 body {
+  margin-right: 0!important;
+  padding-right: 0!important;
   background-color: #181310;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 300;
+  color: #696968;
   
 } 
+
 
 h1, h2, h3, h4, h5, h6 {
   color: orange;
@@ -21,7 +19,6 @@ h1 {
   margin-bottom: 6rem;
   margin-top: 2rem;
 }
-
 h4 {
   color: #f7d69d;
   padding: 0 2em;
@@ -29,7 +26,8 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
+  color: #696968;
+  font-size: 16px;
   line-height: 1.3rem;
 }
 
@@ -37,7 +35,6 @@ a {
   text-decoration: none;
   color: orange;
 }
-
 a:hover {
   color: rgb(29, 242, 5); 
 }
@@ -63,13 +60,19 @@ a:hover {
 }
 
 input {
+  color: rgb(104, 103, 101);
   width: 100%;
   border: 2px solid orange;
   border-radius: 3px;  
 }
 
+label {
+  color: rgb(104, 103, 101);
+  
+}
 
 textarea {
+  color: rgb(104, 103, 101);
   width: 100%;
   border: 2px solid orange;
   border-radius: 3px;
@@ -111,12 +114,13 @@ textarea {
   color: orange!important;
 }
 
+
+
 .card {
   border: 5px solid orange;
   margin-bottom: 5rem!important;
 }
 
-           /* FOOTER FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER   */
 .footer-dark {
   padding:70px 0;
   color:#f0f9ff;
@@ -171,13 +175,13 @@ textarea {
   border-radius:50%;
   box-shadow:0 0 0 2px rgba(255,255,255,0.4);
   margin:0 8px;
-  color:#f9a406;
+  color:#fff;
   opacity:0.75;
   margin-top: 100px;
 }
 
 .footer-dark .item.social > a:hover {
-   color: rgb(250, 209, 133);
+  opacity:0.9;
 }
 
 .footer-dark .copyright {
@@ -188,7 +192,11 @@ textarea {
   margin-bottom:0;
 }
 
-
+@media (max-width:1000px) {
+  .card-group {
+    display: block;
+  }
+}
 
 @media (max-width:991px) {
   .footer-dark .item.social {
@@ -196,6 +204,7 @@ textarea {
     margin-top:20px;
   }
 }
+
 
 
 @media (max-width:767px) {
