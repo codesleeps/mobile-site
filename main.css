@@ -1,5 +1,3 @@
-
-
 body {
   margin-right: 0!important;
   padding-right: 0!important;
@@ -33,7 +31,7 @@ p {
 
 a {
   text-decoration: none;
-  color: orange;
+  
 }
 a:hover {
   color: rgb(29, 242, 5); 
@@ -55,8 +53,26 @@ a:hover {
 }
 
 .header-img {
-  margin-top: 7rem;
-  margin-bottom: 6rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1%;
+  width: 100%;
+}
+
+.header-img img {
+  flex: 1;
+  max-width: 24%;
+  height: auto;
+  object-fit: cover;
+}
+
+.header-image {
+  width: 24%;
+  max-width: 300px;
+  display: inline-block;
+  margin: 0 0.5%;
 }
 
 input {
@@ -87,11 +103,13 @@ textarea {
 }
 
 .call-button {
-  background-color: #292422;
+  padding: 8px;
   color: orange;
-  border-radius: 3px;
+
   width: 100%;
 }
+
+
 
 .spacer {
   height: 8rem;
